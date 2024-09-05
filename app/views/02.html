@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  href: "/",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        Ashley Jones has been connected with an NHS dentist
+      </h1>
+      <!--Card Start-->
+      <div class="nhsuk-card">
+        <div class="nhsuk-card__content">
+          <h3 class="nhsuk-card__heading">
+            Molar Crown Dental
+      
+          </h3>
+          <p class="nhsuk-card__description">123 This Street<br>
+            This Town <br>Your County<br>CF10 1NS<br>
+            <p>If you do not Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam odio metus, vestibulum eget tincidunt id, elementum non nunc. Praesent viverra non eros vitae viverra. Curabitur nisi dui, feugiat nec sapien tempor, consectetur facilisis ipsum</p>
+
+            <p>Please respond within [28 consecutive] days.</p>
+            <p>The Dental Practice <b>will not contact you</b> until the allocation has been accepted</p>
+            <p>Go to <a href="#">111.nhs.uk</a> or <a href="#">call 111</a></p>
+        </p>
+        <a href="/templates/question-page" class="nhsuk-button">
+            Accept allocation
+          </a>
+          <a href="/templates/question-page" class="nhsuk-button nhsuk-button--secondary">
+            Reject aallocation
+          </a>
+        </div>
+      </div>
+      <!--Card End-->
+      <!--
+      <p>Use this service to:</p>
+
+      <ul>
+        <li>do something</li>
+        <li>update your name, address or other details</li>
+        <li>do something else</li>
+      </ul>
+
+      <p>Registering takes around 5 minutes.</p>
+
+
+      <h2 class="nhsuk-heading-m">Before you start</h2>
+
+      <p>You can only use this service if you live in the UK.</p>
+
+      <a href="/templates/question-page" class="nhsuk-button">
+        Start now
+      </a>
+
+    </div>
+ 
+  </div>
+ -->
+{% endblock %}

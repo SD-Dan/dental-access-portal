@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Start page template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+  href: "/",
+  text: "Home"
+}) }}
+{% endblock %}
+
+{% block content %}
+  
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+<!--Box Char Count-->
+<div class="nhsuk-character-count" data-module="nhsuk-character-count" data-maxlength="200">
+
+    <div class="nhsuk-form-group">
+      <h1 class="nhsuk-label-wrapper">
+        <label class="nhsuk-label nhsuk-label--l" for="more-detail">
+          Please tell us why you want to remove this application
+        </label>
+      </h1>
+      <div class="nhsuk-hint" id="more-detail-hint">
+        This will help us improve our service.
+      </div>
+      <textarea class="nhsuk-textarea nhsuk-js-character-count" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+    </div>
+  
+    <div class="nhsuk-hint nhsuk-character-count__message" id="more-detail-info">
+      You can enter up to 200 characters
+    </div>
+  
+  </div>
+        <!--Box Char Count-->
+        <!--
+      <h1>
+        Service name goes here
+      </h1>
+
+      <p>Use this service to:</p>
+
+      <ul>
+        <li>do something</li>
+        <li>update your name, address or other details</li>
+        <li>do something else</li>
+      </ul>
+
+      <p>Registering takes around 5 minutes.</p>
+
+
+      <h2 class="nhsuk-heading-m">Before you start</h2>
+
+      <p>You can only use this service if you live in the UK.</p>
+-->
+      <a href="/templates/question-page" class="nhsuk-button">
+        Submit
+      </a>
+
+    </div>
+
+  </div>
+{% endblock %}

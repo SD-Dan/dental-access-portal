@@ -1,0 +1,302 @@
+{% extends 'layout.html' %}
+
+{% set mainClasses = "nhsuk-main-wrapper--s" %}
+
+{% block pageTitle %}
+  Check your answers template - NHS.UK prototype kit
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1 class="nhsuk-u-margin-top-4">
+        Hello, Ashley Jones
+      </h1>
+
+      <h3>
+        NHS Number: 9435797881
+      </h3>
+    
+      <h3>
+        Date of Birth: 01/04/1975
+      </h3>
+      <h2>
+        Change or update your details
+      </h2>
+      <!-- Start of the List -->
+      {{ summaryList({
+        rows: [
+        {
+            key: {
+              text: "Name"
+            },
+            value: {
+              text: "485 777 3456"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "NHS number"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Date of Birth"
+            },
+            value: {
+              text: "Kevin Francis"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "name"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Address"
+            },
+            value: {
+              html: "15 March 1984"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "date of birth"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Email address"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "NHS Number"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Contact Preferences"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Special Requirements"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "GP Practice"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Communication Language"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Treatment Language"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Public Transport"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Travel Distance"
+            },
+            value: {
+              html: '8 Bridgewater Place<br>Leeds<br>LS11 5BZ'
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "home address"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+<!-- start of list
+
+
+      <h2>
+        Medical details
+      </h2>
+
+      {{ summaryList({
+        rows: [
+          {
+            key: {
+              text: "Allergies"
+            },
+            value: {
+              text: "No allergies"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "allergies"
+                }
+              ]
+            }
+          },
+          {
+            key: {
+              text: "Conditions"
+            },
+            value: {
+              html: "Asthma <br> Disabilities, including physical and learning disabilities"
+            },
+            actions: {
+              items: [
+                {
+                  href: "#",
+                  text: "Change",
+                  visuallyHiddenText: "conditions"
+                }
+              ]
+            }
+          }
+        ]
+      }) }}
+ end of list -->
+   
+ 
+ <h2>
+        Now update your application
+      </h2>
+
+      <p>
+        By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+<!-- 
+      <p>
+        Your details with be sent to Rose Medical Practice to begin your registration.
+      </p>
+-->
+      <a href="/templates/confirmation-page" class="nhsuk-button">
+        Update
+      </a>
+
+    </div>
+  </div>
+{% endblock %}
